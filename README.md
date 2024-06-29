@@ -1,9 +1,10 @@
 # Translator [en-de]
 
-PyTorch implementation of seq2seq transformer model based on the original [paper](https://arxiv.org/abs/1706.03762). The saved weights for thhe trained model with 24M parameters is used for the end-to-end `EN` to `DE` translator app.
+PyTorch implementation of an encoder-decoder seq2seq transformer model based on the original [paper](https://arxiv.org/abs/1706.03762). The saved weights for the trained model are used for the end-to-end `EN` to `DE` translator app.
 
 ## Table of Contents
 
+* [Demo](#demo)
 * [Model](#model)
 * [Dataset](#dataset)
 * [Evaluation](#evaluation)
@@ -11,6 +12,13 @@ PyTorch implementation of seq2seq transformer model based on the original [paper
     * [BLEU Score](#bleu-score)
 * [Deployment](#deployment)
     * [Docker Compose Deployment](#docker-compose-deployment)
+
+## Demo
+
+
+
+https://github.com/LostInCode404/translator-en-de/assets/15314796/9e386092-1483-44f2-a02d-4a272e9bd099
+
 
 
 ## Model
