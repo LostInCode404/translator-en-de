@@ -1,0 +1,23 @@
+version: '3'
+services:
+  app:
+    container_name: translator-en-de
+    volumes:
+      - ../artifacts:/app/artifacts
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - "5000:8501"
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+    deploy:
+      resources:
+        reservations:
+          devices:
+          - driver: nvidia
+            capabilities:
+              - gpu
+              - utility
+              - compute
+              - video
